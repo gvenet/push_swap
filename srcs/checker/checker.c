@@ -24,7 +24,7 @@ static void	check_result(int st_size, int **stacks)
 			write(2, "\033[31;01m", ft_strlen("\033[36;01m"));
 			write(STDOUT_FILENO, "KO\n", 3);
 			write(2, "\033[00m", ft_strlen("\033[00m"));
-			return;
+			return ;
 		}
 	}
 	write(2, "\033[32;01m", ft_strlen("\033[36;01m"));

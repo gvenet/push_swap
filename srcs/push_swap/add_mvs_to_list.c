@@ -2,8 +2,8 @@
 
 void	add_mvs_to_list(t_ps *ps, int ***st, int mvs)
 {
-	int	**stacks;
-	t_list *tmp;
+	int		**stacks;
+	t_list	*tmp;
 
 	stacks = *st;
 	tmp = NULL;
