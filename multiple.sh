@@ -14,6 +14,6 @@ while TRUE; do
  		((i+=1))
 		rm a
 	done
-	sleep 3
+	sleep 1
 	clear
 done

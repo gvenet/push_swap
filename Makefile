@@ -14,8 +14,8 @@ OBJ_DIR_CH := $(OBJ_DIR)checker
 OBJ_DIR_CM := $(OBJ_DIR)common
 
 BIN_DIR	:= bin/
-NAME_PS	:= $(BIN_DIR)push_swap/
-NAME_CH := $(BIN_DIR)checker/
+NAME_PS	:= $(BIN_DIR)push_swap
+NAME_CH := $(BIN_DIR)checker
 
 SRC_PS	:= $(wildcard $(SRC_DIR_PS)*.c) $(wildcard $(SRC_DIR_PS)*/*.c)
 SRC_CH	:= $(wildcard $(SRC_DIR_CH)*.c) $(wildcard $(SRC_DIR_CH)*/*.c)
@@ -28,7 +28,7 @@ OBJ_CM	:= $(SRC_CM:$(SRC_DIR_CM)%.c=$(OBJ_DIR_CM)%.o)
 CC		:= gcc
 CFLAGS	:= -Wall -Wextra -Werror
 INCLUDE	:= -Iinc -Ilibft/inc/
-LDFLAGS	:= -Llibft/bin -lft
+LDFLAGS	:= -Llibft/bin -lft -g3
 # LDFLAGS	:= -Llibft/bin -lft -g3 -fsanitize=address
 
 

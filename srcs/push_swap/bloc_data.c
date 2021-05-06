@@ -11,8 +11,10 @@ static int	nb_bloc_calc(int size)
 		nb_bloc = 0.0444 * size + 1.56;
 	else if (size <= 300)
 		nb_bloc = 0.015 * size + 4.5;
-	else if (size <= 500)
+	else if (size <= 1000)
 		nb_bloc = 0.02 * size + 3;
+	if (nb_bloc == 0)
+		return (1);
 	return (nb_bloc);
 }
 

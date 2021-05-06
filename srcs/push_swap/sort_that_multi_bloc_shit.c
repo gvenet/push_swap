@@ -78,7 +78,7 @@ void	smaller_return(t_ps *ps, int ***st)
 	int	**stacks;
 
 	stacks = *st;
-	while (stacks[B][ps->st_size] != 1)
+	while (stacks[B][ps->st_size] != smaller_fct(ps, stacks[B]))
 	{
 		if (smaller_index(ps, stacks[B]) > ps->st_size - stacks[B][0] / 2)
 			add_mvs_to_list(ps, &stacks, rrb);
@@ -98,6 +98,7 @@ void	sort_that_multi_bloc_shit(int ***st, t_ps *ps)
 	stacks = *st;
 	current_nb = 1;
 	bloc_range = 1;
+	last_bloc_range = 0;
 	while (current_nb <= ps->st_size)
 	{
 		bloc_range = range_selector(ps->bloc_data, current_nb);
