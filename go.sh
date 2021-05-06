@@ -1,7 +1,8 @@
 clear
 make
 # while true ; do
-declare -a arg=(9 6 3 8 5 2 7 4 1 0 12 13 14 52 41 87 99 66 33);
+# 3 7 5 10
+declare -a arg=( 3 7 5 10 80 50);
 if (( $# != 0 ));then
 	unset arg
 	arg=$@

@@ -28,8 +28,8 @@ OBJ_CM	:= $(SRC_CM:$(SRC_DIR_CM)%.c=$(OBJ_DIR_CM)%.o)
 CC		:= gcc
 CFLAGS	:= -Wall -Wextra -Werror
 INCLUDE	:= -Iinc -Ilibft/inc/
-# LDFLAGS	:= -Llibft/bin -lft
-LDFLAGS	:= -Llibft/bin -lft -g3 -fsanitize=address
+LDFLAGS	:= -Llibft/bin -lft
+# LDFLAGS	:= -Llibft/bin -lft -g3 -fsanitize=address
 
 
 .PHONY: all clean fclean re
