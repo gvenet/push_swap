@@ -49,5 +49,6 @@ int	main(int ac, char **av)
 		free (buf);
 	}
 	check_result(st_size, stacks);
+	free (buf);
 	return (exit_clear(stacks, NULL, 0, NULL));
 }
