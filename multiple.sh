@@ -4,11 +4,11 @@ while TRUE; do
 	i=0
 	while ((i<5));do
 		ARG=$(<"results/$i"_in)
-		 echo
-		 echo $ARG
+		#  echo
+		#  echo $ARG
 		./bin/push_swap $ARG >a
-		cat a
-		echo
+		# cat a
+		# echo
 		cat a | ./bin/checker $ARG
 		cat -b a | wc -l | xargs
  		((i+=1))

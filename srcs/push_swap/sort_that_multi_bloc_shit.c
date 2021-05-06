@@ -76,9 +76,7 @@ static void	add_rb_rrb(t_ps *ps, int ***st)
 void	smaller_return(t_ps *ps, int ***st)
 {
 	int	**stacks;
-	int	i;
 
-	i = 1;
 	stacks = *st;
 	while (stacks[B][ps->st_size] != 1)
 	{
