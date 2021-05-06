@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-static void	free_lst(t_list **lst)
+void	free_lst(t_list **lst)
 {
 	t_list	*tmp;
 
