@@ -1,4 +1,7 @@
+*.a
 *.o
 *.vscode
 *.data
 /results
+push_swap
+checker

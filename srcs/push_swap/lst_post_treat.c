@@ -9,12 +9,12 @@ static void	replace_rra(t_list *pb_start, t_list *pb_end, int i)
 	j = i;
 	while (pb_start != pb_end && pb_start)
 	{
-		if (!ft_strncmp(pb_start->content, "rra", 3) && i)
+		if (!ft_strncmp(pb_start->content, "rra", 4) && i)
 		{
 			i--;
 			pb_start->content = "rrr";
 		}
-		if (!ft_strncmp(pb_start->content, "rrb", 3) && j)
+		if (!ft_strncmp(pb_start->content, "rrb", 4) && j)
 		{
 			j--;
 			q = pb_start;

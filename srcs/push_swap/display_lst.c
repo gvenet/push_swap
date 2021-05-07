@@ -7,7 +7,6 @@ void	display_lst(t_list *l)
 	while (l)
 	{
 		mvs = l->content;
-		// printf("mvs = %s || %p\n",mvs,l);
 		write(1, mvs, ft_strlen(mvs));
 		write(1, "\n", 1);
 		l = l->next;

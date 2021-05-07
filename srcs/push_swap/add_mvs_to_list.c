@@ -3,11 +3,13 @@
 void	add_mvs_to_list(t_ps *ps, int ***st, int mvs)
 {
 	int		**stacks;
+	char	*s;
 	t_list	*tmp;
 
 	stacks = *st;
 	tmp = NULL;
-	tmp = ft_lstnew(ps->t->tab_mvs[mvs]);
+	s = ps->t->tab_mvs[mvs];
+	tmp = ft_lstnew(s);
 	if (!tmp)
 	{
 		free_lst(&ps->lst_mvs);

@@ -1,5 +1,5 @@
 #!/bin/bash
-# clear
+clear
 make
 # while true ; do
 # 3 7 5 10
