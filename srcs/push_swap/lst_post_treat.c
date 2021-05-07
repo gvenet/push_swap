@@ -84,7 +84,7 @@ static void	delete_elems(int cnt[4], t_list *pb_start, t_list *pb_end)
 	}
 }
 
-t_list	*lst_post_treatment(t_list *l)
+void	lst_post_treatment(t_list *l)
 {
 	t_list	*pb_start;
 	t_list	*pb_end;
@@ -107,5 +107,4 @@ t_list	*lst_post_treatment(t_list *l)
 		}
 		l = l->next;
 	}
-	return (l);
 }

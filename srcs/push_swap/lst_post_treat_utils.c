@@ -19,12 +19,12 @@ void	cnt_init(int cnt[4])
 
 void	cnt_mvs(char *mvs, int cnt[4])
 {
-	if (!ft_strncmp(mvs, "rra", 3))
+	if (!ft_strncmp(mvs, "rra", 4))
 		cnt[c_rra]++;
-	else if (!ft_strncmp(mvs, "rrb", 3))
+	else if (!ft_strncmp(mvs, "rrb", 4))
 		cnt[c_rrb]++;
-	else if (!ft_strncmp(mvs, "ra", 2))
+	else if (!ft_strncmp(mvs, "ra", 3))
 		cnt[c_ra]++;
-	else if (!ft_strncmp(mvs, "rb", 2))
+	else if (!ft_strncmp(mvs, "rb", 3))
 		cnt[c_rb]++;
 }

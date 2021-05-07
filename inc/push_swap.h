@@ -25,7 +25,7 @@ int		range_selector(int *bloc_data, int current_nb);
 int		smaller_index(t_ps *ps, int *stack);
 int		smaller_fct(t_ps *ps, int *stack);
 int		bigger_fct(t_ps *ps, int *stack);
-t_list	*lst_post_treatment(t_list *l);
+void	lst_post_treatment(t_list *l);
 int		is_mvs(char **content, t_list *l, char *mvs);
 void	cnt_init(int cnt[4]);
 void	cnt_mvs(char *mvs, int cnt[4]);
