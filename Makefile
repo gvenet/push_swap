@@ -17,9 +17,25 @@ BIN_DIR	:= bin/
 NAME_PS	:= $(BIN_DIR)push_swap
 NAME_CH := $(BIN_DIR)checker
 
-SRC_PS	:= $(wildcard $(SRC_DIR_PS)*.c) $(wildcard $(SRC_DIR_PS)*/*.c)
-SRC_CH	:= $(wildcard $(SRC_DIR_CH)*.c) $(wildcard $(SRC_DIR_CH)*/*.c)
-SRC_CM	:= $(wildcard $(SRC_DIR_CM)*.c) $(wildcard $(SRC_DIR_CM)*/*.c)
+SRC_CH	:= $(SRC_DIR_CH)/checker.c
+SRC_PS	:= $(SRC_DIR_PS)/add_mvs_to_list.c \
+$(SRC_DIR_PS)/bloc_data.c \
+$(SRC_DIR_PS)/display_lst.c \
+$(SRC_DIR_PS)/lst_post_treat.c \
+$(SRC_DIR_PS)/lst_post_treat_utils.c \
+$(SRC_DIR_PS)/push_swap.c \
+$(SRC_DIR_PS)/push_swap_utils.c.c \
+$(SRC_DIR_PS)/simplify_data.c \
+$(SRC_DIR_PS)/sort_that_little_shit.c \
+$(SRC_DIR_PS)/sort_that_multi_bloc_shit.c \
+$(SRC_DIR_PS)/sort_that_shit.c
+SRC_CM	:= $(SRC_DIR_CM)/common_utils.c \
+$(SRC_DIR_CM)/init.c \
+$(SRC_DIR_CM)/moves_p.c \
+$(SRC_DIR_CM)/moves_r.c \
+$(SRC_DIR_CM)/moves_rr.c \
+$(SRC_DIR_CM)/moves_s.c \
+$(SRC_DIR_CM)/moves_tab_set.c
 
 OBJ_PS	:= $(SRC_PS:$(SRC_DIR_PS)%.c=$(OBJ_DIR_PS)%.o)
 OBJ_CH	:= $(SRC_CH:$(SRC_DIR_CH)%.c=$(OBJ_DIR_CH)%.o)
