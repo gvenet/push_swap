@@ -2,7 +2,7 @@ make
 while TRUE; do
 	python3 run_multiple.py $1;
 	i=0
-	while ((i<5));do
+	while ((i<10));do
 		ARG=$(<"results/$i"_in)
 		#  echo
 		#  echo $ARG

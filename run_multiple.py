@@ -8,7 +8,7 @@ import sys
 range_start = -300
 range_stop = 300
 longueur_liste = int(sys.argv[1])
-nombre_executions = 5
+nombre_executions = 10
 dir_name = 'results'
 
 def get_score(start, stop, n):

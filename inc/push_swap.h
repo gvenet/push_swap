@@ -11,6 +11,7 @@ typedef struct s_ps
 	t_tabs	*t;
 }t_ps;
 
+void	init_sort(int *current_nb, int *bloc_range, int *last_bloc_range);
 void	free_lst(t_list **lst);
 void	display_lst(t_list *l);
 void	display_lst_bloc(t_list *pb_start, t_list *pb_end, int fd);

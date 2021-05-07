@@ -96,9 +96,7 @@ void	sort_that_multi_bloc_shit(int ***st, t_ps *ps)
 	int	last_bloc_range;
 
 	stacks = *st;
-	current_nb = 1;
-	bloc_range = 1;
-	last_bloc_range = 0;
+	init_sort(&current_nb, &bloc_range, &last_bloc_range);
 	while (current_nb <= ps->st_size)
 	{
 		bloc_range = range_selector(ps->bloc_data, current_nb);

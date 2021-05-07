@@ -29,7 +29,6 @@ CC		:= gcc
 CFLAGS	:= -Wall -Wextra -Werror
 INCLUDE	:= -Iinc -Ilibft/inc/
 LDFLAGS	:= -Llibft/bin -lft 
-# LDFLAGS	:= -Llibft/bin -lft -g3 -fsanitize=address
 
 
 .PHONY: all clean fclean re

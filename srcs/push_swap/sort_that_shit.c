@@ -1,5 +1,12 @@
 #include "push_swap.h"
 
+void	init_sort(int *current_nb, int *bloc_range, int *last_bloc_range)
+{
+	*current_nb = 1;
+	*bloc_range = 1;
+	*last_bloc_range = 0;
+}
+
 static int	moves_cnt(t_ps *ps, int *stack, int nb)
 {
 	int	i;
